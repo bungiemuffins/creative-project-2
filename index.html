@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<hea>
+    <title>NBA Names</title>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script text="type/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">NBA Stars</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.nba.com/">NBA.com</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.ticketmaster.com/nba/?landing=c&awtrc=true&c=SEM_TMNBA_ggl_1571491344_58874043109_nba%20tickets&GCID=0&&gclid=CjwKCAjw8e7mBRBsEiwAPVxxiLr7gybTFBu0meqDd0ZMveTBUj_XAJztaWVeJMjMHqKet8oYQ6ayuxoCcIYQAvD_BwE&gclsrc=aw.ds">Find Tickets</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/players.jpg" alt="players">
+            </div>
+            <div class="carousel-item">
+                <img src="images/teams.jpg" alt="teams">
+            </div>
+            <div class="carousel-item">
+                <img src="images/games.jpg" alt="games">
+            </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        
+    </div>
+    <div class="intro">
+        <h1>NBA's Star Names</h1>
+        <p>Want to know if you share a name with an NBA player? Enter your name to find out!</p>
+        <div class="input-group mb-3">
+            <input id="playerInput" type="text" class="form-control" placeholder="Enter a Name">
+            <div class="input-group-append">
+                <button id="playerSubmit" class="btn btn-success" type="submit">Search</button> 
+            </div>
+        </div>
+    </div>
+
+
+    <div id="playerReturn" class="flex-container">
+        <div style="height: 500px; font-size: 75px;">You Haven't Entered A Name Yet! Hurry! Enter One!</div>
+    </div>
+
+    <footer>
+        <header>Keaton Kimball</header>
+        <header>CS260</header>
+        <a href="https://github.com/bungiemuffins/creative-project-2" alt="github">GitHub Link</a>
+    </footer>
+
+
+
+</body>
