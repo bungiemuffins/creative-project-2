@@ -18,11 +18,13 @@ window.onload = function() {
             team = '';
             for(let i = 0; i < json.data.length; i++) {
                 team = json.data[i].team.name;
-                results += '<a class="playerContainer" style="background-image: url(/images/' + team + '.jpg)" href="https://www.google.com/search?q='  + json.data[i].first_name + "+" + json.data[i].last_name + '\">'
+                results += '<a class="playerContainer" style="background-image: url(images/png/' + team + '.png)" href="https://www.google.com/search?q='  + json.data[i].first_name + "+" + json.data[i].last_name + '\">'
                 results += '<div>';
                 results += "<h1>" + json.data[i].first_name + " " + json.data[i].last_name + "</h1>";
                 results += "<h2>" + json.data[i].team.full_name + "</h2>";
-                results += "<p>" + json.data[i].height_feet + "'" + json.data[i].height_inches + "\"</p>";   
+                if(json.data[i].height_feet != null) {
+                    results += "<p>" + json.data[i].height_feet + "'" + json.data[i].height_inches + "\"</p>";
+                }
                 results += "</div>";
                 results += "</a>"
             }
